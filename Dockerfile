@@ -1,5 +1,17 @@
-FROM node:latest
+FROM node:6.3.1
+
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY package.json /usr/src/app/
 
 RUN npm install
 
-EXPOSE 3000
+# Bundle app source
+COPY . /usr/src/app
+
+EXPOSE 3000 3001
+
+CMD ["npm", "start"]
