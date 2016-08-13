@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script>
+    System.config({
+      packages: {
+        // meaning [baseURL]/local/package when no other rules are present
+        // path is normalized using map and paths configuration
+        'build/lesson1-class': {
+          main: 'App',
+          format: 'cjs',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('build/lesson1-class/App');
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
