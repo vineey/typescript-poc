@@ -1,7 +1,7 @@
-import {IShape} from './IShape';
-import {BaseShape} from './BaseShape';
+import {IShapedButton} from './IShapeButton';
+import {BaseShapeButton} from './BaseShapeButton';
 
-export class Circle extends BaseShape implements IShape {
+export class CircleButton extends BaseShapeButton implements IShapedButton {
   
     constructor(color: string, x : number, y:number){
         super('Circle', color, x,y);

@@ -1,6 +1,6 @@
-import {IShape} from './IShape';
+import {IShapedButton} from './IShapeButton';
 
-export abstract class BaseShape implements IShape {
+export abstract class BaseShapeButton implements IShapedButton {
 
     constructor(public name: string, public color: string, public x: number, public y: number) {
     }

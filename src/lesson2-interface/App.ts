@@ -1,11 +1,11 @@
-import {Circle} from './Circle';
-import {Square} from './Square';
-import {IShape} from './IShape';
+import {CircleButton} from './CircleButton';
+import {RectangleButton} from './SquareButton';
+import {IShapedButton} from './IShapeButton';
 
 class App {
-    private shapes: IShape[];
+    private shapes: IShapedButton[];
 
-    constructor(shapes: IShape[]) {
+    constructor(shapes: IShapedButton[]) {
         this.shapes = shapes;
     }
 
@@ -17,8 +17,8 @@ class App {
 }
 
 new App([
-    new Circle("blue", 10, 10),
-    new Circle("red", 200, 10),
-    new Square("green", 20, 100),
-    new Square("yellow", 300, 100)
+    new CircleButton("blue", 10, 10),
+    new CircleButton("red", 200, 10),
+    new RectangleButton("green", 20, 100),
+    new RectangleButton("yellow", 300, 100)
 ]).init();
