@@ -8,4 +8,4 @@ This showcase features of Typescript such as:
 +
 
 
-[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](typescript-demo.sloppy.zone) 
+[![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](http://typescript-demo.sloppy.zone/) 
