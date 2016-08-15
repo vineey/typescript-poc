@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+    typescript-poc:
+        image: node
+        container_name: typescript-poc
+        ports:
+         - "127.0.0.1:3000:3000"
+         - "127.0.0.1:3001:3001"
+        working_dir: /usr/src/app
+        volumes:
+         - .:/usr/src/app
+        command: npm start
